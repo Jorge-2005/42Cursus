@@ -1,0 +1,10 @@
+[tool.poetry]
+name = "loading"
+version = "0.1.0"
+description = "Matrix data simulation"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+numpy = "*"
+pandas = "*"
+matplotlib = "*"

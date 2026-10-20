@@ -1,8 +1,0 @@
-clean:
-	find . -name "__pycache__" -type d -exec rm -rf {} +
-
-Parte	                Significado
-find .	                Busca desde la carpeta actual
--name "__pycache__"	    Que se llamen así
--type d	                Solo directorios
--exec rm -rf {} +	    Ejecuta rm -rf sobre todo lo que encuentre

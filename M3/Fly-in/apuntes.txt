@@ -1,0 +1,20 @@
+clean:
+	find . -name "__pycache__" -type d -exec rm -rf {} +
+
+Parte	                Significado
+find .	                Busca desde la carpeta actual
+-name "__pycache__"	    Que se llamen así
+-type d	                Solo directorios
+-exec rm -rf {} +	    Ejecuta rm -rf sobre todo lo que encuentre
+
+
+get connection
+
+Por tanto, puedes comparar los nombres de las zonas de la conexión nueva con los de la conexión que ya está guardada.
+
+La clave es que una conexión coincide si se cumple una de estas dos condiciones:
+- El primer extremo coincide con el primero y el segundo con el segundo: A–B = A–B.
+- El primer extremo coincide con el segundo y el segundo con el primero: A–B = B–A.
+Por ejemplo, si la conexión guardada tiene zone1.name == "A" y zone2.name == "B", la conexión nueva B–A tendrá zone1.name == "B" y zone2.name == "A".
+
+Tu reto: intenta expresar esas dos condiciones con if y el operador or en Python. No necesitas crear listas nuevas ni cambiar tu estructura actual.
